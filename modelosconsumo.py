@@ -2,7 +2,7 @@
 """
 Created on Sun Feb 20 18:55:04 2022
 
-@author: Victor
+@author: Victor Toro Lara
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +13,7 @@ import csv as csv
 from matplotlib import pyplot as plt  
 
 
-
+#Estos modelos buscan entregar el consumo de combustible de distintos motores en función de la potencia demandada. 
 
 def consumomerce238(hp):
     if hp<=0:
