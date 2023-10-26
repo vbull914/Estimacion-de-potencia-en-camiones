@@ -2,9 +2,9 @@
 """
 Created on Sun Jan 30 17:27:25 2022
 
-@author: Victor
+@author: Victor Toro Lara
 """
-
+#this function returns the speed of the truck dependin on the RPM and some features depending on the wheel, gear and the axle. 
 import numpy as np
 import matplotlib.pyplot as plt
 import math
