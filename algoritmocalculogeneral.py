@@ -2,7 +2,7 @@
 """
 Created on Wed Sep  8 10:17:46 2021
 
-@author: Victor
+@author: Victor Toro Lara 
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -102,7 +102,7 @@ alto=3.8
 ancho=2.5
 a= ancho*alto
 nllantas=12
-dneuma=41.8#en pulgadas
+dneuma=41.8 #en pulgadas
 velocidad=90/3.6 #m/s
 
 tmax= 3300 #nm
@@ -157,9 +157,7 @@ def velo(n,p):
     return  n*2*np.pi*60*(dneuma*0.0245/2)/(1000*p*pd)
 
 
-    
-
-# Curvas ascenso velocidad descendente
+# Curvas ascenso velocidad descendente. Define la velocidad del camión en función de la ruta
     
 def pend1(x):
     if x>2400:
@@ -209,7 +207,7 @@ def pend8(x):
     else:
         return 90.3-2.3-.163*x+1.47E-4*x**2-5.64E-8*x**3+7.83E-12*x**4
 
-# Caso descenso velocidad ascendente
+# Caso descenso velocidad ascendente. Define la velocidad del camión en función de la ruta
     
 def pend0(x):
     if x>2250:
@@ -368,7 +366,7 @@ def columnvelo(trip):
     viaje=trip
     viaje.append([0]*len(viaje[0])) #esto lo ocuparé cuando esté listo
     #viaje.append([0]*170)
-    viaje.append([0]*len(viaje[0]))#columna para indicar si dato sirve o no.
+    viaje.append([0]*len(viaje[0])) #columna para indicar si dato sirve o no.
     #viaje.append([0]*170)
     for i in range(len(viaje[0])): 
     #for i in range(170):
